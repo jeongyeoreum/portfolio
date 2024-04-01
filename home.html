@@ -6,12 +6,46 @@
     <style>
 /* CSS 스타일 시트 작성 */
 body { background-color : mistyrose; }
-h3 { color : purple; }
-hr { border : 5px solid yellowgreen; }
+h3 { color : dimgrey; }
+hr { border : 5px solid lightpink; }
 span { color : blue; font-size : 20px; }
 </style>
 </head>
 <body>
-여름이의 홈 페이지 방문을 환영합니다.
+<h3>여름이의 홈 페이지 방문을 환영합니다.</h3>
+<hr>
+<fieldset>
+ <legend>빵실</legend>
+<ul type='square'>
+ <li>내가 좋아하는음식이요
+    <ul type='circle'>
+    <li> 엽기떡볶이
+    <li> 초코꿀단지
+    <li> 고구마피자
+    <li> 채소티김
+    </ul>
+</ul><ul> <a href="http://www.daum.net">엶 인스타그램</a></ul>
+     <tbody>
+ <tr> <td> <img src=""> </td> </tr>
+     </tbody>
+</fieldset>
+<fieldset>
+    <legend> 감자 </legend>
+ <form>
+먹고싶은 것을 한 가지 선택하시요: <br>
+ <input type="radio" name="food" value="텐동">텐동
+ <input type="radio"name="food" value="햄버거" checked> 햄보고
+ <input type="radio"name="food"value="지코바">지코바
+ </form>
+
+
+선호도:30%
+<input type="range"min="0" max="100" list="preference">선호도:90%
+ <datalist id="preference">
+ <option value="30" label="Low">
+ <option value="50" label="Medium">
+ <option value="90" label="High">
+ </datalist>
+</fieldset>
 </body>
 </html>
